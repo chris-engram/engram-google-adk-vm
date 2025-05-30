@@ -1,0 +1,12 @@
+{
+  "mcps": {
+    "perplexity-ask": {
+      "command": "npx",
+      "args": ["-y", "server-perplexity-ask"],
+      "env": {
+        "PERPLEXITY_API_KEY": "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"
+      },
+      "description": "Perplexity AI search and question answering"
+    }
+  }
+}
