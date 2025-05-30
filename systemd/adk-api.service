@@ -1,0 +1,15 @@
+[Unit]
+Description=Google ADK API Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/google-agents
+Environment="PATH=/root/.venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+ExecStart=/root/.venv/bin/adk api_server --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

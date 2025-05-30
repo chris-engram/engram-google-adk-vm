@@ -1,0 +1,9 @@
+{
+    "appName": "revsup-candidate-qualify",
+    "userId": "test-user",
+    "sessionId": "cff08f6c-1df3-41dd-ab23-340a00f0357b",
+    "newMessage": {
+        "role": "user",
+        "parts": [{"text": "Hello! Can you tell me about your capabilities?"}]
+    }
+}

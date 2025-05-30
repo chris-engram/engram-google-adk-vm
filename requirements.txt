@@ -1,0 +1,16 @@
+# Core ADK and API requirements
+google-adk==1.1.1
+fastapi==0.115.12
+uvicorn==0.34.2
+
+# Scalar documentation
+scalar_fastapi==1.0.3
+
+# HTTP clients
+httpx==0.28.1
+httpx-sse==0.4.0
+requests==2.32.3
+
+# Additional dependencies
+python-dotenv>=1.0.0
+pydantic>=2.0.0

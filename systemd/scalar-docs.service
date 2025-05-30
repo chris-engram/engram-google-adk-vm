@@ -1,0 +1,17 @@
+[Unit]
+Description=Scalar Documentation Server
+After=network.target adk-api.service
+Requires=adk-api.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/google-agents
+Environment="PATH=/root/.venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Environment="PYTHONPATH=/root/google-agents"
+ExecStart=/root/.venv/bin/python3 /root/google-agents/scalar_docs.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
